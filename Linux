@@ -1,1 +1,802 @@
+pwd
 
+/home/username
+
+then if u create directory next will be directory
+
+uname - a--check the os detail 64 bit 
+
+whoami - username
+
+ex ubuntu@poorni ---user name ubuntu
+
+apt-get update
+
+mkdir school
+
+cd school/
+
+editor (like notepad, visual studio)like that
+
+
+
+file creation
+
+vi hello.txt (extension--is a file name) without extension also it will work
+
+ls
+
+sudo - root(real time-admin only use)
+
+ubuntu linux
+
+apt-get
+
+sudo apt-get install vim
+
+ls -ltr
+
+starting with d--that is directory
+
+or else it is file
+
+
+vi helo.txt or vim file name(any one is fine)--go with vi
+
+(hello world):
+
+One more editor like vi
+
+Nano
+
+Nano.txt
+
+If vi editor-to type you have to click I to press
+
+For nano not required
+
+
+
+if you want to create a empty file - u can use touch
+
+touch poo.txt
+
+rm --use to delete the file
+rm -r--used to delete the directory
+
+
+rm - remove
+
+rm poo.txt--ethu remove aaidum
+
+ex: ls *.txt---rm *.txt--it wil remove all .txt file
+
+ex:helo la start aarathu delete panum na ls he*--it will list then u can delete
+
+
+
+if u use cat commend u not need to open the file --direct u can see the content there only
+
+
+
+when u r coping file from one file --that time u have to give source and destination
+
+cp poo.txt(source) new poo.txt(destination)--ls 
+
+
+
+
+
+example -cut and copy that means in source if i use cut this will not be appeare there --that is called move(mv)
+
+ex-if i want to rename a file
+
+vi hello.txt ---i wamt t rename this file
+
+mv hello.txt demo.txt---then u do ls u can only see demo.txt
+
+
+
+double greater than(>>)---this is called append
+
+ append symbol use to write in 
+
+note: using cat commend u can able to create a file by coping the another file
+
+ex-cat demo.txt  >> new.txt
+
+check new.txt same demo.txt op is present is there
+
+
+
+echo(means print) echo "poorni" 
+
+echo "poorni" >> new.txt---poorni name aa new.txt file la write pandrathuku tha append use pandram
+
+
+
+there is a short cut for home directory
+
+~/ ---telled / it will cover /home/user 
+
+
+
+direct ulla eno our directry create panum na mkdir demo(alread this directory is there)
+
+
+
+mkdir demo/test --demo ula eno our directry create aairukum
+
+
+
+if i want to create multiple directry in one time like oru directry ula eno oru directory athu ula eno onu
+
+ mkdir -p /test/learn/exam
+
+
+
+pwd --if one to directry la iruinthu vaiya varanum cd..
+
+cd ../../ --2nd directory la iruinthu at on time la valiya varathu
+
+
+
+cd (-) cd - will take you to last aa use pana directory
+
+
+
+extension with file name (must)
+
+
+
+ls -lstr==u will get full details(long listing)
+
+
+
+ls -a===it will display all files along with hidden file
+
+
+
+hidden file create pandrathuku file name mundadi .a use panaum
+
+=================================================
+
+environmental variable
+
+
+
+i want to install any python or java they we need to select home directory where to nstall that like that in linux there is a bashrc --that is a home for instally pyhton or java bashrc(home directory)
+
+
+
+ubuntu -bashrc or other os can .profile or bash_profile
+
+vi .bashrc
+
+if u open this there u need to set the path install python there u ned to go to vi.bash
+
+once u set the path then u need to execute this file (source .bashrc) OR . .bashrc
+
+
+
+ls *.py ---it will show only py all files
+
+===========================================================
+
+ln ==(hardlink)
+
+ln originat.txt testingteam.txt ---same data but different team want to access so creating hardlink (hardink means file ula irukura data same but different file i want,i want file name is original another team want testingteam as a file name)
+
+
+
+softlink
+
+ ln -s 
+
+ln -s original.txt newfile.txt
+
+
+
+hard link soft life ku difference(soft link la antha file kuda ethu our sub file Vantha athu soft link but in hard link both the original and other file will so different file)
+
+
+
+in soft if u delete original file that subfile also remove(bcz only file link it will point out)
+
+
+
+=========================
+
+Alias name if u close the terminal it will go"
+
+y using alias -for example u r using length directory /home/ubuntu/demo/text
+
+echo "mange" = "cd/home/ubuny/etc"
+
+manage it will come all the directory 
+
+if you want permant--go to .brashrc -(that is environmental variable set)
+
+
+
+===
+
+ex:vi poorni.py
+
+linux terminal la run panum na --->python3 poorni.py bcz pyhton3 installed in my virtual machine
+
+
+
+=====
+
+nohup python3 poorni.py  >>  ---this commend will run ithis python code ni background
+
+
+
+nohup python3 poorni.py >> poorni.py log & --py code output will store in log file
+
+
+
+top ===top commend used to what are running in u r system
+
+ps ==process status
+
+ps -aux ===which file is running
+
+a--show process for all users ,not just current one
+
+u - show the user who owns the process and display in user format
+
+x-show process not attached to the terminal
+
+==
+
+tail -f poorni_py == tail -f our data va vara vara pakanum(eluthita irukuratha pakanum)
+
+tail -40 -=last 40 line
+
+==
+
+if u want to kill running process
+
+
+
+kill -9 process_id== -9 means force aa atha delete pamidu
+
+====
+
+ps -aux | grep poorni.py ==grep is used for pattern matching for only particular file
+
+====
+
+wget -used to download any image or file
+
+wget "image link"
+
+======
+
+Disk la evalo free space irukunu pakurathuku
+
+df -h --ethavathu fil eaaitu varutha system la ela mout pana pathu fill aagutha
+
+du -sh scripts / ---particular directory evalo use aairukunu check pandrathuku
+
+--
+
+zip file.zip(name of the zip file ) entha file zip pana poram
+
+ex -zip test.zip exam/
+
+--
+
+unzip filename
+
+--
+
+sudo apt-get install zip
+
+--
+
+sudo apt-get ===it will update upto date
+
+
+
+===tail means last few lines f-means follow
+
+
+
+ls -lstr | tail -f
+
+
+
+========
+
+tar and untar
+
+
+
+tar -czvf
+
+c-compress
+
+z-forceable
+
+v-verbouse list
+
+f-follow
+
+
+
+tar -czvf simple.tar scripts/
+
+it will create simple tar file inside script folder
+
+rm -rf script/
+
+-
+
+un tar
+
+tar -zxvf ---x means extract z means force aa un tar
+
+tar -zxvf sample.txt
+
+if u check ls -lstr===script folder will be there
+
+======
+
+system memory to check ram usage
+
+free -m (mb)
+
+free -g (gb)
+
+cache clear panna
+
+sudo sh -c "sync; echo 3> /proc/sys/vm/drop_caches"
+
+========
+
+wc - word count
+
+it is used for how many lines how many words and characters
+
+wc -w poorni.txt --ethula ethane words iruko athu o/p varum
+
+wc -c poorni.txt --ethane character irukunu nu cout pani tharum
+
+
+
+===========
+
+sort
+
+this commend used to sort ur file in alphabetic order
+
+sort -r text_1 (this will reserverse order)
+
+sort -n text_2(based on number it will sort)
+
+======
+
+head --this head commend show first 10 lines katum like how tail will give last 10 line
+
+head -n 5 sample.txt ---1sr 5 lines
+
+=====
+
+grep (global regular expration)
+
+pattern match pani our sila visiyam find pandrathu--our word entha file la iruku or python run aaitu iruku athoda current status check pandrathu
+
+ex - grep error filename(it will give output only for error lines)
+
+grep -i error (case insensitive)
+
+grep -v error (it will ignore error line it will give output for other lines like info )
+
+grep warning * .log (it will search all the log files and give only warning line)
+
+grep warning * .log | tail -f (it will give last 10 log)
+
+grep warning * .log | tail -20(it will search last 20 files)
+
+ls -lstr | tail -f
+
+grep -r "Timeout" ~/logs(-r recursive means it will search folder ulla folder ulla irukura file la entha timout error search panum)
+
+grep "^\[Error\]" log.txt (^-rejux it is a regular expreesion ethu error nu start aaguratha search pani o/p tharum)
+
+===========
+
+nohup python poorni.py >> poornifile.log & -->nohup(background la run pana) poornifile.log it will store the output of the running python file &(ambrastion symbol ethuku use pandrangana if terminal close aanalum server on la tha na iruku rocess kil aagama background la run aaitu irukum)
+
+
+
+run aaitu irukura file pakka
+
+ps -aux | grep poorni.py
+
+kill -9 id(number)
+
+=============================
+
+SSH(secure shell)
+
+SCP(secure copy)
+
+---
+
+SSH
+
+ipconfig(windows)
+
+ifconfig(linux)
+
+
+
+sudo apt-get update
+
+sudo apt-get install openssh-server
+
+ex - i want to connect my system to one ip (both r in same network)
+
+ssh ipaddress
+
+if we are doing ssh (we want to connect 2 systems that time both of the system need to have ssh)
+
+(source to destination)
+
+another system(password we must know)
+
+hostname(ur system ip have one name -using that also u can connect ur system to ur frd system)
+
+--tool(putty ,winscp)
+
+---
+
+if it is mac we can connect through ssh
+
+incase it is windows so u can use tools 
+
+putty - paste ip
+
+ssh- auth-crede
+
+----
+
+login putty using the username(like ur machine user name like ubuntu)
+
+==========
+
+SCP(secure copy--our system to another syste how to copy the files)
+
+scp (source file) ubuntu@poorni : (destination file)
+
+ubuntu@poorni:another system 
+
+ex - scp /home/ubuntu/logs/job_logs ubuntu@poorni : /home/ubuntu/test/file.log
+
+password : connect pandra system password
+
+--sudo means source server password
+
+======
+
+find
+
+find . -name filename.txt -->it will search in current directory ./filename.txt
+
+find . -name  "*.txt"-->ending text files-->it will search current directory-like directory ula directory ulla
+
+find . -type f -size +10M(more than 10mb)
+
+find . -mtime -1(1day 24 hours modified file)
+
+find . -empty (it will so empty file)
+
+find . -name "*.tmp" -delete
+
+---
+
+dif bt find and grep
+
+find - files and directory-used for name,file,size (works on filesystem)
+
+grep - text inside files(matching(works on file content level)
+
+
+
+===
+
+awk - is a commend-line tool (we can do calculation using awk related to the files)
+
+awk '{print}' data.txt
+
+awk '{print $1}' data.txt --(1st colum)
+
+$1 - colum 1
+
+$2 - colum 2
+
+awk '{print $1 ,$3}' data.txt --(1st colum)
+
+awk '$2 >27(age) {print $1,$3}' dta.txt--it will print 27 above age member data
+
+o/p asha designer
+
+ravi tester
+
+
+
+==========
+
+chmod
+
+
+
+user - user who owns that file
+
+group - member of the file grp
+
+other -everyone else  excluding owner and group
+
+root -admin
+
+===================
+
+permission 
+
+
+
+d rwx(users) rx(group) rx(execute) ->(d-directory r-read w-write x-execute(user) read existe(group and others)
+
+rw - rw -r--
+
+rw -r -r--
+
+read (r) -4
+
+write(w) -2
+
+execute(x) - 1 ==4+2+1=(7)
+
+0--no permisson
+
+chmod 755 filename -->7user 5-group 5-others
+
+chmod 777 filename-->full permission(generally we wont give this permission)
+
+chmod -R (directry) 555 filename
+
+
+
+==========================
+
+scheduling
+
+
+
+1)cron
+
+2)airflow
+
+3)even while u can use
+
+
+
+======
+
+crontab -e
+
+cron formula--
+
+crontab guru(website to verify forula)
+
+tail -f filename(file elutha elutha pakkalam)
+
+
+
+----.
+
+nohup python3 filename >> log.txt &
+
+ps -aux(this is like task manager --which is running)
+
+----
+
+airflow
+
+-
+
+turn windows features on or of
+
+windows subsystem for linux
+
+wsl --install (o/p ubuntu is already installed)
+
+sudo apt update
+
+sudo apt install python3 
+
+virtual environment
+
+install virtual environment
+
+create and activate -virtual environment
+
+mkdir airflow
+
+cd /airflow
+
+virtualenv  airflow
+
+-
+
+activate commend
+
+source airflow/bin/activate
+
+once only creating virtula environment--each tie connecting terminal we need to run the source
+
+--
+
+airflow need to install
+
+pip install ....
+
+--
+
+airflow will store all meta data information
+
+airflow will give web ui--so we need to start web server--start with port
+
+web ui -la-airflow connect panum pothu user create pananum-again source login
+
+-
+
+ETL Process(writing python code -run in airflow)--using airflow scheduling the python process
+
+airflow(python file--dag)
+
+--
+
+shell script 
+
+direct aa call panama
+
+wrapper write pani call pandrathu
+
+--
+
+airflow code separate
+
+airflow schduler-run pannaum
+
+DAG
+
+airflow-install in server-(virtuak environment)
+
+dag.py(file)
+
+job(ETL) separate or wrapper using call (wrapper means sh file)
+
+--
+
+airflow run pani output tharum based on usecase
+
+
+
+----
+
+shell scripting(rapper script)
+
+(automation,scduling,rapper(email notification))--like pyhton,java,rdbms
+
+1st-need to create a file
+
+vi test.sh
+
+#!/bin/bash--bash shell full path(#!-this file need to execute using the linux interpretor)
+
+hello poorni
+
+echo 
+
+name = poorni
+
+echo "hello,$name!"
+
+o/p hello poorni 
+
+sh test.sh--run the file--
+
+u can use loop exceptin handling
+
+
+
+---user input in linux
+
+echo"enter your name"
+
+read username
+
+echo "welcome,$username!"
+
+--
+
+read will waiting for our input
+
+---
+
+if [$num -gt 10];then
+
+echo "this is greater
+
+else
+
+---
+
+$0 --is the name of the script
+
+$1 --1st arugument of the script
+
+$2 --2nd argument of the script
+
+sh script.sh poorni student --script.sh--0, poorni-1,student-2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
